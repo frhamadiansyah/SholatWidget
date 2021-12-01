@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75A414FB2757AF0100AD2291 /* SholatWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A414FA2757AF0100AD2291 /* SholatWidgetApp.swift */; };
+		75A414FD2757AF0100AD2291 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A414FC2757AF0100AD2291 /* ContentView.swift */; };
+		75A414FF2757AF0400AD2291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75A414FE2757AF0400AD2291 /* Assets.xcassets */; };
+		75A415022757AF0400AD2291 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75A415012757AF0400AD2291 /* Preview Assets.xcassets */; };
+		75A415042757AF0400AD2291 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A415032757AF0400AD2291 /* Persistence.swift */; };
+		75A415072757AF0400AD2291 /* SholatWidget.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75A415052757AF0400AD2291 /* SholatWidget.xcdatamodeld */; };
+		75A415112757AF0400AD2291 /* SholatWidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A415102757AF0400AD2291 /* SholatWidgetTests.swift */; };
+		75A4151B2757AF0400AD2291 /* SholatWidgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A4151A2757AF0400AD2291 /* SholatWidgetUITests.swift */; };
+		75A4151D2757AF0500AD2291 /* SholatWidgetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A4151C2757AF0500AD2291 /* SholatWidgetUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75A4150D2757AF0400AD2291 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75A414EF2757AF0100AD2291 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75A414F62757AF0100AD2291;
+			remoteInfo = SholatWidget;
+		};
+		75A415172757AF0400AD2291 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75A414EF2757AF0100AD2291 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75A414F62757AF0100AD2291;
+			remoteInfo = SholatWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		75A414F72757AF0100AD2291 /* SholatWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SholatWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75A414FA2757AF0100AD2291 /* SholatWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholatWidgetApp.swift; sourceTree = "<group>"; };
+		75A414FC2757AF0100AD2291 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		75A414FE2757AF0400AD2291 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75A415012757AF0400AD2291 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		75A415032757AF0400AD2291 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		75A415062757AF0400AD2291 /* SholatWidget.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SholatWidget.xcdatamodel; sourceTree = "<group>"; };
+		75A4150C2757AF0400AD2291 /* SholatWidgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SholatWidgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75A415102757AF0400AD2291 /* SholatWidgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholatWidgetTests.swift; sourceTree = "<group>"; };
+		75A415162757AF0400AD2291 /* SholatWidgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SholatWidgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75A4151A2757AF0400AD2291 /* SholatWidgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholatWidgetUITests.swift; sourceTree = "<group>"; };
+		75A4151C2757AF0500AD2291 /* SholatWidgetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholatWidgetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75A414F42757AF0100AD2291 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75A415092757AF0400AD2291 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75A415132757AF0400AD2291 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75A414EE2757AF0100AD2291 = {
+			isa = PBXGroup;
+			children = (
+				75A414F92757AF0100AD2291 /* SholatWidget */,
+				75A4150F2757AF0400AD2291 /* SholatWidgetTests */,
+				75A415192757AF0400AD2291 /* SholatWidgetUITests */,
+				75A414F82757AF0100AD2291 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75A414F82757AF0100AD2291 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75A414F72757AF0100AD2291 /* SholatWidget.app */,
+				75A4150C2757AF0400AD2291 /* SholatWidgetTests.xctest */,
+				75A415162757AF0400AD2291 /* SholatWidgetUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75A414F92757AF0100AD2291 /* SholatWidget */ = {
+			isa = PBXGroup;
+			children = (
+				75A414FA2757AF0100AD2291 /* SholatWidgetApp.swift */,
+				75A414FC2757AF0100AD2291 /* ContentView.swift */,
+				75A414FE2757AF0400AD2291 /* Assets.xcassets */,
+				75A415032757AF0400AD2291 /* Persistence.swift */,
+				75A415052757AF0400AD2291 /* SholatWidget.xcdatamodeld */,
+				75A415002757AF0400AD2291 /* Preview Content */,
+			);
+			path = SholatWidget;
+			sourceTree = "<group>";
+		};
+		75A415002757AF0400AD2291 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				75A415012757AF0400AD2291 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		75A4150F2757AF0400AD2291 /* SholatWidgetTests */ = {
+			isa = PBXGroup;
+			children = (
+				75A415102757AF0400AD2291 /* SholatWidgetTests.swift */,
+			);
+			path = SholatWidgetTests;
+			sourceTree = "<group>";
+		};
+		75A415192757AF0400AD2291 /* SholatWidgetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				75A4151A2757AF0400AD2291 /* SholatWidgetUITests.swift */,
+				75A4151C2757AF0500AD2291 /* SholatWidgetUITestsLaunchTests.swift */,
+			);
+			path = SholatWidgetUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75A414F62757AF0100AD2291 /* SholatWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75A415202757AF0500AD2291 /* Build configuration list for PBXNativeTarget "SholatWidget" */;
+			buildPhases = (
+				75A414F32757AF0100AD2291 /* Sources */,
+				75A414F42757AF0100AD2291 /* Frameworks */,
+				75A414F52757AF0100AD2291 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SholatWidget;
+			productName = SholatWidget;
+			productReference = 75A414F72757AF0100AD2291 /* SholatWidget.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75A4150B2757AF0400AD2291 /* SholatWidgetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75A415232757AF0500AD2291 /* Build configuration list for PBXNativeTarget "SholatWidgetTests" */;
+			buildPhases = (
+				75A415082757AF0400AD2291 /* Sources */,
+				75A415092757AF0400AD2291 /* Frameworks */,
+				75A4150A2757AF0400AD2291 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75A4150E2757AF0400AD2291 /* PBXTargetDependency */,
+			);
+			name = SholatWidgetTests;
+			productName = SholatWidgetTests;
+			productReference = 75A4150C2757AF0400AD2291 /* SholatWidgetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		75A415152757AF0400AD2291 /* SholatWidgetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75A415262757AF0500AD2291 /* Build configuration list for PBXNativeTarget "SholatWidgetUITests" */;
+			buildPhases = (
+				75A415122757AF0400AD2291 /* Sources */,
+				75A415132757AF0400AD2291 /* Frameworks */,
+				75A415142757AF0400AD2291 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75A415182757AF0400AD2291 /* PBXTargetDependency */,
+			);
+			name = SholatWidgetUITests;
+			productName = SholatWidgetUITests;
+			productReference = 75A415162757AF0400AD2291 /* SholatWidgetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75A414EF2757AF0100AD2291 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					75A414F62757AF0100AD2291 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					75A4150B2757AF0400AD2291 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 75A414F62757AF0100AD2291;
+					};
+					75A415152757AF0400AD2291 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 75A414F62757AF0100AD2291;
+					};
+				};
+			};
+			buildConfigurationList = 75A414F22757AF0100AD2291 /* Build configuration list for PBXProject "SholatWidget" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75A414EE2757AF0100AD2291;
+			productRefGroup = 75A414F82757AF0100AD2291 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75A414F62757AF0100AD2291 /* SholatWidget */,
+				75A4150B2757AF0400AD2291 /* SholatWidgetTests */,
+				75A415152757AF0400AD2291 /* SholatWidgetUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75A414F52757AF0100AD2291 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75A415022757AF0400AD2291 /* Preview Assets.xcassets in Resources */,
+				75A414FF2757AF0400AD2291 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75A4150A2757AF0400AD2291 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75A415142757AF0400AD2291 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75A414F32757AF0100AD2291 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75A415072757AF0400AD2291 /* SholatWidget.xcdatamodeld in Sources */,
+				75A415042757AF0400AD2291 /* Persistence.swift in Sources */,
+				75A414FD2757AF0100AD2291 /* ContentView.swift in Sources */,
+				75A414FB2757AF0100AD2291 /* SholatWidgetApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75A415082757AF0400AD2291 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75A415112757AF0400AD2291 /* SholatWidgetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75A415122757AF0400AD2291 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75A4151B2757AF0400AD2291 /* SholatWidgetUITests.swift in Sources */,
+				75A4151D2757AF0500AD2291 /* SholatWidgetUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75A4150E2757AF0400AD2291 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75A414F62757AF0100AD2291 /* SholatWidget */;
+			targetProxy = 75A4150D2757AF0400AD2291 /* PBXContainerItemProxy */;
+		};
+		75A415182757AF0400AD2291 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75A414F62757AF0100AD2291 /* SholatWidget */;
+			targetProxy = 75A415172757AF0400AD2291 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		75A4151E2757AF0500AD2291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		75A4151F2757AF0500AD2291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75A415212757AF0500AD2291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SholatWidget/Preview Content\"";
+				DEVELOPMENT_TEAM = JPMPS53HUZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.selfProject.SholatWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75A415222757AF0500AD2291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SholatWidget/Preview Content\"";
+				DEVELOPMENT_TEAM = JPMPS53HUZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.selfProject.SholatWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		75A415242757AF0500AD2291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JPMPS53HUZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.selfProject.SholatWidgetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SholatWidget.app/SholatWidget";
+			};
+			name = Debug;
+		};
+		75A415252757AF0500AD2291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JPMPS53HUZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.selfProject.SholatWidgetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SholatWidget.app/SholatWidget";
+			};
+			name = Release;
+		};
+		75A415272757AF0500AD2291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JPMPS53HUZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.selfProject.SholatWidgetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SholatWidget;
+			};
+			name = Debug;
+		};
+		75A415282757AF0500AD2291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JPMPS53HUZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.selfProject.SholatWidgetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SholatWidget;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75A414F22757AF0100AD2291 /* Build configuration list for PBXProject "SholatWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75A4151E2757AF0500AD2291 /* Debug */,
+				75A4151F2757AF0500AD2291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75A415202757AF0500AD2291 /* Build configuration list for PBXNativeTarget "SholatWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75A415212757AF0500AD2291 /* Debug */,
+				75A415222757AF0500AD2291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75A415232757AF0500AD2291 /* Build configuration list for PBXNativeTarget "SholatWidgetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75A415242757AF0500AD2291 /* Debug */,
+				75A415252757AF0500AD2291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75A415262757AF0500AD2291 /* Build configuration list for PBXNativeTarget "SholatWidgetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75A415272757AF0500AD2291 /* Debug */,
+				75A415282757AF0500AD2291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		75A415052757AF0400AD2291 /* SholatWidget.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				75A415062757AF0400AD2291 /* SholatWidget.xcdatamodel */,
+			);
+			currentVersion = 75A415062757AF0400AD2291 /* SholatWidget.xcdatamodel */;
+			path = SholatWidget.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 75A414EF2757AF0100AD2291 /* Project object */;
+}
