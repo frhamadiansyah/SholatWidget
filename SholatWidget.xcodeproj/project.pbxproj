@@ -16,6 +16,26 @@
 		75A415112757AF0400AD2291 /* SholatWidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A415102757AF0400AD2291 /* SholatWidgetTests.swift */; };
 		75A4151B2757AF0400AD2291 /* SholatWidgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A4151A2757AF0400AD2291 /* SholatWidgetUITests.swift */; };
 		75A4151D2757AF0500AD2291 /* SholatWidgetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A4151C2757AF0500AD2291 /* SholatWidgetUITestsLaunchTests.swift */; };
+		75B1A6EC2757B57700EB6F95 /* SholatError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1A6EB2757B57700EB6F95 /* SholatError.swift */; };
+		75B1A6EE2757B5AE00EB6F95 /* SholatTimingsRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1A6ED2757B5AE00EB6F95 /* SholatTimingsRequestModel.swift */; };
+		75B1A6F02757B5E700EB6F95 /* SholatAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1A6EF2757B5E700EB6F95 /* SholatAPIResponse.swift */; };
+		75B1A6F22757B63500EB6F95 /* SholatData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1A6F12757B63500EB6F95 /* SholatData.swift */; };
+		75B1A6F62757B66300EB6F95 /* Timings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1A6F52757B66300EB6F95 /* Timings.swift */; };
+		75B1A6FD2757B6EC00EB6F95 /* Extension+CoreLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1A6FC2757B6EC00EB6F95 /* Extension+CoreLocationManager.swift */; };
+		75B1A6FF2757B71600EB6F95 /* SholatLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1A6FE2757B71600EB6F95 /* SholatLocationManager.swift */; };
+		75B1A7022757B81500EB6F95 /* SholatAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1A7012757B81500EB6F95 /* SholatAPIService.swift */; };
+		75B1A7052757B85300EB6F95 /* SholatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1A7042757B85300EB6F95 /* SholatViewModel.swift */; };
+		75B1A7082757B88B00EB6F95 /* SholatAPIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1A7072757B88B00EB6F95 /* SholatAPIServiceProtocol.swift */; };
+		75B1A70A2757B8C500EB6F95 /* SholatViewDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1A7092757B8C500EB6F95 /* SholatViewDelegateProtocol.swift */; };
+		75B1A70C2757B8EB00EB6F95 /* CLLocationManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1A70B2757B8EB00EB6F95 /* CLLocationManagerProtocol.swift */; };
+		75B1A7102757BBC800EB6F95 /* SholatAPIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1A70F2757BBC800EB6F95 /* SholatAPIServiceTests.swift */; };
+		75B1A7132757BC1A00EB6F95 /* SholatViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1A7122757BC1A00EB6F95 /* SholatViewModelTests.swift */; };
+		75B1A7162757BC5400EB6F95 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1A7152757BC5400EB6F95 /* MockURLProtocol.swift */; };
+		75B1A7182757BC8200EB6F95 /* MockSholatAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1A7172757BC8200EB6F95 /* MockSholatAPIService.swift */; };
+		75B1A71A2757BCB700EB6F95 /* MockSholatViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1A7192757BCB700EB6F95 /* MockSholatViewDelegate.swift */; };
+		75B1A71C2757BCDB00EB6F95 /* MockLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1A71B2757BCDB00EB6F95 /* MockLocationManager.swift */; };
+		75B1A71E2757BD2500EB6F95 /* MockConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1A71D2757BD2500EB6F95 /* MockConstants.swift */; };
+		75B1A7202757BDB500EB6F95 /* MockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 75B1A71F2757BDB500EB6F95 /* MockResponse.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +68,26 @@
 		75A415162757AF0400AD2291 /* SholatWidgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SholatWidgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A4151A2757AF0400AD2291 /* SholatWidgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholatWidgetUITests.swift; sourceTree = "<group>"; };
 		75A4151C2757AF0500AD2291 /* SholatWidgetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholatWidgetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		75B1A6EB2757B57700EB6F95 /* SholatError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholatError.swift; sourceTree = "<group>"; };
+		75B1A6ED2757B5AE00EB6F95 /* SholatTimingsRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholatTimingsRequestModel.swift; sourceTree = "<group>"; };
+		75B1A6EF2757B5E700EB6F95 /* SholatAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholatAPIResponse.swift; sourceTree = "<group>"; };
+		75B1A6F12757B63500EB6F95 /* SholatData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholatData.swift; sourceTree = "<group>"; };
+		75B1A6F52757B66300EB6F95 /* Timings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timings.swift; sourceTree = "<group>"; };
+		75B1A6FC2757B6EC00EB6F95 /* Extension+CoreLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+CoreLocationManager.swift"; sourceTree = "<group>"; };
+		75B1A6FE2757B71600EB6F95 /* SholatLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholatLocationManager.swift; sourceTree = "<group>"; };
+		75B1A7012757B81500EB6F95 /* SholatAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholatAPIService.swift; sourceTree = "<group>"; };
+		75B1A7042757B85300EB6F95 /* SholatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholatViewModel.swift; sourceTree = "<group>"; };
+		75B1A7072757B88B00EB6F95 /* SholatAPIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholatAPIServiceProtocol.swift; sourceTree = "<group>"; };
+		75B1A7092757B8C500EB6F95 /* SholatViewDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholatViewDelegateProtocol.swift; sourceTree = "<group>"; };
+		75B1A70B2757B8EB00EB6F95 /* CLLocationManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationManagerProtocol.swift; sourceTree = "<group>"; };
+		75B1A70F2757BBC800EB6F95 /* SholatAPIServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholatAPIServiceTests.swift; sourceTree = "<group>"; };
+		75B1A7122757BC1A00EB6F95 /* SholatViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholatViewModelTests.swift; sourceTree = "<group>"; };
+		75B1A7152757BC5400EB6F95 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		75B1A7172757BC8200EB6F95 /* MockSholatAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSholatAPIService.swift; sourceTree = "<group>"; };
+		75B1A7192757BCB700EB6F95 /* MockSholatViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSholatViewDelegate.swift; sourceTree = "<group>"; };
+		75B1A71B2757BCDB00EB6F95 /* MockLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocationManager.swift; sourceTree = "<group>"; };
+		75B1A71D2757BD2500EB6F95 /* MockConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockConstants.swift; sourceTree = "<group>"; };
+		75B1A71F2757BDB500EB6F95 /* MockResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockResponse.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +138,11 @@
 		75A414F92757AF0100AD2291 /* SholatWidget */ = {
 			isa = PBXGroup;
 			children = (
+				75B1A7062757B86800EB6F95 /* Protocols */,
+				75B1A7032757B83800EB6F95 /* ViewModels */,
+				75B1A7002757B80000EB6F95 /* Services */,
+				75B1A6F72757B68400EB6F95 /* Managers */,
+				75B1A6EA2757B53F00EB6F95 /* Models */,
 				75A414FA2757AF0100AD2291 /* SholatWidgetApp.swift */,
 				75A414FC2757AF0100AD2291 /* ContentView.swift */,
 				75A414FE2757AF0400AD2291 /* Assets.xcassets */,
@@ -119,6 +164,9 @@
 		75A4150F2757AF0400AD2291 /* SholatWidgetTests */ = {
 			isa = PBXGroup;
 			children = (
+				75B1A7142757BC3400EB6F95 /* Mocks */,
+				75B1A7112757BBE600EB6F95 /* ViewModels */,
+				75B1A70E2757BB9800EB6F95 /* Services */,
 				75A415102757AF0400AD2291 /* SholatWidgetTests.swift */,
 			);
 			path = SholatWidgetTests;
@@ -133,6 +181,82 @@
 			path = SholatWidgetUITests;
 			sourceTree = "<group>";
 		};
+		75B1A6EA2757B53F00EB6F95 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				75B1A6EB2757B57700EB6F95 /* SholatError.swift */,
+				75B1A6ED2757B5AE00EB6F95 /* SholatTimingsRequestModel.swift */,
+				75B1A6EF2757B5E700EB6F95 /* SholatAPIResponse.swift */,
+				75B1A6F12757B63500EB6F95 /* SholatData.swift */,
+				75B1A6F52757B66300EB6F95 /* Timings.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		75B1A6F72757B68400EB6F95 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				75B1A6FC2757B6EC00EB6F95 /* Extension+CoreLocationManager.swift */,
+				75B1A6FE2757B71600EB6F95 /* SholatLocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		75B1A7002757B80000EB6F95 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				75B1A7012757B81500EB6F95 /* SholatAPIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		75B1A7032757B83800EB6F95 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				75B1A7042757B85300EB6F95 /* SholatViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		75B1A7062757B86800EB6F95 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				75B1A7072757B88B00EB6F95 /* SholatAPIServiceProtocol.swift */,
+				75B1A7092757B8C500EB6F95 /* SholatViewDelegateProtocol.swift */,
+				75B1A70B2757B8EB00EB6F95 /* CLLocationManagerProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		75B1A70E2757BB9800EB6F95 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				75B1A70F2757BBC800EB6F95 /* SholatAPIServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		75B1A7112757BBE600EB6F95 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				75B1A7122757BC1A00EB6F95 /* SholatViewModelTests.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		75B1A7142757BC3400EB6F95 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				75B1A7152757BC5400EB6F95 /* MockURLProtocol.swift */,
+				75B1A7172757BC8200EB6F95 /* MockSholatAPIService.swift */,
+				75B1A7192757BCB700EB6F95 /* MockSholatViewDelegate.swift */,
+				75B1A71B2757BCDB00EB6F95 /* MockLocationManager.swift */,
+				75B1A71D2757BD2500EB6F95 /* MockConstants.swift */,
+				75B1A71F2757BDB500EB6F95 /* MockResponse.json */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +267,7 @@
 				75A414F32757AF0100AD2291 /* Sources */,
 				75A414F42757AF0100AD2291 /* Frameworks */,
 				75A414F52757AF0100AD2291 /* Resources */,
+				75B1A70D2757B94A00EB6F95 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -246,6 +371,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75B1A7202757BDB500EB6F95 /* MockResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,15 +384,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		75B1A70D2757B94A00EB6F95 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		75A414F32757AF0100AD2291 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75B1A6F22757B63500EB6F95 /* SholatData.swift in Sources */,
+				75B1A6EE2757B5AE00EB6F95 /* SholatTimingsRequestModel.swift in Sources */,
 				75A415072757AF0400AD2291 /* SholatWidget.xcdatamodeld in Sources */,
+				75B1A7022757B81500EB6F95 /* SholatAPIService.swift in Sources */,
+				75B1A70A2757B8C500EB6F95 /* SholatViewDelegateProtocol.swift in Sources */,
 				75A415042757AF0400AD2291 /* Persistence.swift in Sources */,
+				75B1A6FD2757B6EC00EB6F95 /* Extension+CoreLocationManager.swift in Sources */,
+				75B1A6F62757B66300EB6F95 /* Timings.swift in Sources */,
+				75B1A7082757B88B00EB6F95 /* SholatAPIServiceProtocol.swift in Sources */,
+				75B1A6FF2757B71600EB6F95 /* SholatLocationManager.swift in Sources */,
+				75B1A6EC2757B57700EB6F95 /* SholatError.swift in Sources */,
 				75A414FD2757AF0100AD2291 /* ContentView.swift in Sources */,
+				75B1A6F02757B5E700EB6F95 /* SholatAPIResponse.swift in Sources */,
+				75B1A7052757B85300EB6F95 /* SholatViewModel.swift in Sources */,
 				75A414FB2757AF0100AD2291 /* SholatWidgetApp.swift in Sources */,
+				75B1A70C2757B8EB00EB6F95 /* CLLocationManagerProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +432,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75B1A7182757BC8200EB6F95 /* MockSholatAPIService.swift in Sources */,
 				75A415112757AF0400AD2291 /* SholatWidgetTests.swift in Sources */,
+				75B1A71C2757BCDB00EB6F95 /* MockLocationManager.swift in Sources */,
+				75B1A71A2757BCB700EB6F95 /* MockSholatViewDelegate.swift in Sources */,
+				75B1A7102757BBC800EB6F95 /* SholatAPIServiceTests.swift in Sources */,
+				75B1A71E2757BD2500EB6F95 /* MockConstants.swift in Sources */,
+				75B1A7132757BC1A00EB6F95 /* SholatViewModelTests.swift in Sources */,
+				75B1A7162757BC5400EB6F95 /* MockURLProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
