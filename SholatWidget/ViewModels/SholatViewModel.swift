@@ -9,34 +9,46 @@ import Foundation
 import CoreLocation
 
 class SholatViewModel: ObservableObject {
-    
+
     var service: SholatAPIServiceProtocol
     private weak var delegate: SholatViewDelegateProtocol?
     var locationManager: CLLocationManagerProtocol
-    
     @Published var sholatToday: Timings?
     @Published var sholatError: SholatError?
-    init(service: SholatAPIServiceProtocol = SholatAPIService(), delegate: SholatViewDelegateProtocol, locationManager: CLLocationManagerProtocol = CLLocationManager()) {
+    @Published var sholatSchedule: SholatSchedule?
+    @Published var executeFetch: Bool = false
+
+    init(service: SholatAPIServiceProtocol = SholatAPIService(), delegate: SholatViewDelegateProtocol?, locationManager: CLLocationManagerProtocol = CLLocationManager()) {
         self.service = service
         self.delegate = delegate
         self.locationManager = locationManager
     }
+
     func fetchTodaysTiming(withModel model: SholatTimingsRequestModel, todaysDate date: Date) {
         let calendar = Calendar.current.dateComponents([.day, .year, .month], from: date)
         service.fetchSholatTimings(withModel: model) { (response, error) in
             if let error = error {
-                self.sholatError = error
-                self.delegate?.errorHandler(error: error)
+                DispatchQueue.main.async {
+                    self.sholatError = error
+                    self.delegate?.errorHandler(error: error)
+                }
             }
             if let response = response {
                 if (model.getMonth(date: model.date) == calendar.month) && (model.getYear(date: model.date) == calendar.year) {
                     if let day = calendar.day {
-                        self.sholatToday = response.data[day - 1].timings
-                        self.delegate?.successfulFetch()
+                        DispatchQueue.main.async {
+                            self.sholatToday = response.data[day - 1].timings
+                            self.delegate?.successfulFetch()
+                            self.sholatSchedule = SholatSchedule(timings: response.data[day - 1].timings)
+                            // TODO: save timings to persistance
+                            // TODO: Convert timings to position
+                        }
                     }
                 } else {
-                    self.sholatError = SholatError.mismatchRequestAndResponse
-                    self.delegate?.errorHandler(error: SholatError.mismatchRequestAndResponse)
+                    DispatchQueue.main.async {
+                        self.sholatError = SholatError.mismatchRequestAndResponse
+                        self.delegate?.errorHandler(error: SholatError.mismatchRequestAndResponse)
+                    }
                 }
             }
         }

@@ -11,8 +11,8 @@ import CoreLocation
 class SholatLocationManager: NSObject, CLLocationManagerDelegate {
 
     var locationManager: CLLocationManagerProtocol = CLLocationManager()
-    
     var location: CLLocationCoordinate2D?
+
     func getLocation() {
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()

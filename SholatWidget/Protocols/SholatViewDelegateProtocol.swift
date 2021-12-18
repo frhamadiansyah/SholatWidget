@@ -8,7 +8,6 @@
 import Foundation
 
 protocol SholatViewDelegateProtocol: AnyObject {
-    
     func successfulFetch()
     func errorHandler(error: SholatError)
 }

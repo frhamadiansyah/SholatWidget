@@ -8,15 +8,14 @@
 import Foundation
 
 class SholatAPIService: SholatAPIServiceProtocol {
-    
+
     private var urlSession: URLSession
-    
+
     init(urlSession: URLSession = .shared) {
         self.urlSession = urlSession
     }
-    
+
     func fetchSholatTimings(withModel model: SholatTimingsRequestModel, completionHandler: @escaping (SholatAPIResponse?, SholatError?) -> Void) {
-        
         var components = URLComponents()
         components.scheme = "https"
         components.host = "api.aladhan.com"
@@ -27,7 +26,6 @@ class SholatAPIService: SholatAPIServiceProtocol {
             URLQueryItem(name: "month", value: String(model.getMonth(date: model.date))),
             URLQueryItem(name: "year", value: String(model.getYear(date: model.date)))
         ]
-        
         guard let url = components.url else {
             // TODO : Create tests when error
             return
@@ -38,7 +36,6 @@ class SholatAPIService: SholatAPIServiceProtocol {
                 completionHandler(nil, SholatError.failedRequest)
                 return
             }
-            
             if let safeData = data, let sholatAPIResponse = try? JSONDecoder().decode(SholatAPIResponse.self, from: safeData) {
                 completionHandler(sholatAPIResponse, nil)
 
@@ -47,8 +44,6 @@ class SholatAPIService: SholatAPIServiceProtocol {
                 completionHandler(nil, SholatError.invalidJSONResponseModel)
             }
         }
-        
         dataTask.resume()
-        
     }
 }

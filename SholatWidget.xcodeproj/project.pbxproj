@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75137A5E276246A100ABF7B3 /* SholatNow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75137A5D276246A100ABF7B3 /* SholatNow.swift */; };
+		755BC1EF2760C52E006D2B4C /* ProgressMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755BC1EE2760C52E006D2B4C /* ProgressMeter.swift */; };
+		755BC1F22760E9E1006D2B4C /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755BC1F12760E9E1006D2B4C /* ScheduleView.swift */; };
+		755BC1F42760EAB8006D2B4C /* SholatSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755BC1F32760EAB8006D2B4C /* SholatSchedule.swift */; };
+		755BC1F62760ECEF006D2B4C /* ApplicationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755BC1F52760ECEF006D2B4C /* ApplicationUtil.swift */; };
+		755BC1F92760EE6C006D2B4C /* ApplicationUtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755BC1F82760EE6C006D2B4C /* ApplicationUtilTests.swift */; };
+		755BC1FB2760FEEC006D2B4C /* SholatEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755BC1FA2760FEEC006D2B4C /* SholatEnum.swift */; };
+		755BC1FE276102B5006D2B4C /* SholatScheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755BC1FD276102B5006D2B4C /* SholatScheduleTests.swift */; };
+		755BC20027614FF6006D2B4C /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755BC1FF27614FF6006D2B4C /* Stub.swift */; };
+		755BC202276150C0006D2B4C /* CountdownWheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755BC201276150C0006D2B4C /* CountdownWheelView.swift */; };
 		75A414FB2757AF0100AD2291 /* SholatWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A414FA2757AF0100AD2291 /* SholatWidgetApp.swift */; };
 		75A414FD2757AF0100AD2291 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A414FC2757AF0100AD2291 /* ContentView.swift */; };
 		75A414FF2757AF0400AD2291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75A414FE2757AF0400AD2291 /* Assets.xcassets */; };
@@ -36,6 +46,7 @@
 		75B1A71C2757BCDB00EB6F95 /* MockLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1A71B2757BCDB00EB6F95 /* MockLocationManager.swift */; };
 		75B1A71E2757BD2500EB6F95 /* MockConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1A71D2757BD2500EB6F95 /* MockConstants.swift */; };
 		75B1A7202757BDB500EB6F95 /* MockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 75B1A71F2757BDB500EB6F95 /* MockResponse.json */; };
+		75E44C84275910CE006FF3A6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E44C83275910CE006FF3A6 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +67,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		75137A5D276246A100ABF7B3 /* SholatNow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholatNow.swift; sourceTree = "<group>"; };
+		755BC1EE2760C52E006D2B4C /* ProgressMeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressMeter.swift; sourceTree = "<group>"; };
+		755BC1F12760E9E1006D2B4C /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		755BC1F32760EAB8006D2B4C /* SholatSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholatSchedule.swift; sourceTree = "<group>"; };
+		755BC1F52760ECEF006D2B4C /* ApplicationUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationUtil.swift; sourceTree = "<group>"; };
+		755BC1F82760EE6C006D2B4C /* ApplicationUtilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationUtilTests.swift; sourceTree = "<group>"; };
+		755BC1FA2760FEEC006D2B4C /* SholatEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholatEnum.swift; sourceTree = "<group>"; };
+		755BC1FD276102B5006D2B4C /* SholatScheduleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholatScheduleTests.swift; sourceTree = "<group>"; };
+		755BC1FF27614FF6006D2B4C /* Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stub.swift; sourceTree = "<group>"; };
+		755BC201276150C0006D2B4C /* CountdownWheelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownWheelView.swift; sourceTree = "<group>"; };
 		75A414F72757AF0100AD2291 /* SholatWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SholatWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A414FA2757AF0100AD2291 /* SholatWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholatWidgetApp.swift; sourceTree = "<group>"; };
 		75A414FC2757AF0100AD2291 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +109,7 @@
 		75B1A71B2757BCDB00EB6F95 /* MockLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocationManager.swift; sourceTree = "<group>"; };
 		75B1A71D2757BD2500EB6F95 /* MockConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockConstants.swift; sourceTree = "<group>"; };
 		75B1A71F2757BDB500EB6F95 /* MockResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockResponse.json; sourceTree = "<group>"; };
+		75E44C83275910CE006FF3A6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +137,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		755BC1F02760E2C6006D2B4C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				755BC1EE2760C52E006D2B4C /* ProgressMeter.swift */,
+				755BC1F12760E9E1006D2B4C /* ScheduleView.swift */,
+				755BC201276150C0006D2B4C /* CountdownWheelView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		755BC1F72760EE4C006D2B4C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				755BC1F82760EE6C006D2B4C /* ApplicationUtilTests.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		755BC1FC2761029E006D2B4C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				755BC1FD276102B5006D2B4C /* SholatScheduleTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		75A414EE2757AF0100AD2291 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +186,8 @@
 		75A414F92757AF0100AD2291 /* SholatWidget */ = {
 			isa = PBXGroup;
 			children = (
+				755BC1F02760E2C6006D2B4C /* Views */,
+				75E44C82275910B0006FF3A6 /* Home */,
 				75B1A7062757B86800EB6F95 /* Protocols */,
 				75B1A7032757B83800EB6F95 /* ViewModels */,
 				75B1A7002757B80000EB6F95 /* Services */,
@@ -149,6 +199,7 @@
 				75A415032757AF0400AD2291 /* Persistence.swift */,
 				75A415052757AF0400AD2291 /* SholatWidget.xcdatamodeld */,
 				75A415002757AF0400AD2291 /* Preview Content */,
+				755BC1F52760ECEF006D2B4C /* ApplicationUtil.swift */,
 			);
 			path = SholatWidget;
 			sourceTree = "<group>";
@@ -164,6 +215,8 @@
 		75A4150F2757AF0400AD2291 /* SholatWidgetTests */ = {
 			isa = PBXGroup;
 			children = (
+				755BC1FC2761029E006D2B4C /* Models */,
+				755BC1F72760EE4C006D2B4C /* Util */,
 				75B1A7142757BC3400EB6F95 /* Mocks */,
 				75B1A7112757BBE600EB6F95 /* ViewModels */,
 				75B1A70E2757BB9800EB6F95 /* Services */,
@@ -189,6 +242,10 @@
 				75B1A6EF2757B5E700EB6F95 /* SholatAPIResponse.swift */,
 				75B1A6F12757B63500EB6F95 /* SholatData.swift */,
 				75B1A6F52757B66300EB6F95 /* Timings.swift */,
+				755BC1F32760EAB8006D2B4C /* SholatSchedule.swift */,
+				755BC1FA2760FEEC006D2B4C /* SholatEnum.swift */,
+				755BC1FF27614FF6006D2B4C /* Stub.swift */,
+				75137A5D276246A100ABF7B3 /* SholatNow.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -255,6 +312,14 @@
 				75B1A71F2757BDB500EB6F95 /* MockResponse.json */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		75E44C82275910B0006FF3A6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				75E44C83275910CE006FF3A6 /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,18 +478,27 @@
 				75B1A6EE2757B5AE00EB6F95 /* SholatTimingsRequestModel.swift in Sources */,
 				75A415072757AF0400AD2291 /* SholatWidget.xcdatamodeld in Sources */,
 				75B1A7022757B81500EB6F95 /* SholatAPIService.swift in Sources */,
+				755BC1F62760ECEF006D2B4C /* ApplicationUtil.swift in Sources */,
 				75B1A70A2757B8C500EB6F95 /* SholatViewDelegateProtocol.swift in Sources */,
+				75E44C84275910CE006FF3A6 /* HomeView.swift in Sources */,
+				75137A5E276246A100ABF7B3 /* SholatNow.swift in Sources */,
 				75A415042757AF0400AD2291 /* Persistence.swift in Sources */,
 				75B1A6FD2757B6EC00EB6F95 /* Extension+CoreLocationManager.swift in Sources */,
 				75B1A6F62757B66300EB6F95 /* Timings.swift in Sources */,
 				75B1A7082757B88B00EB6F95 /* SholatAPIServiceProtocol.swift in Sources */,
+				755BC20027614FF6006D2B4C /* Stub.swift in Sources */,
+				755BC202276150C0006D2B4C /* CountdownWheelView.swift in Sources */,
 				75B1A6FF2757B71600EB6F95 /* SholatLocationManager.swift in Sources */,
 				75B1A6EC2757B57700EB6F95 /* SholatError.swift in Sources */,
 				75A414FD2757AF0100AD2291 /* ContentView.swift in Sources */,
 				75B1A6F02757B5E700EB6F95 /* SholatAPIResponse.swift in Sources */,
+				755BC1FB2760FEEC006D2B4C /* SholatEnum.swift in Sources */,
 				75B1A7052757B85300EB6F95 /* SholatViewModel.swift in Sources */,
 				75A414FB2757AF0100AD2291 /* SholatWidgetApp.swift in Sources */,
+				755BC1EF2760C52E006D2B4C /* ProgressMeter.swift in Sources */,
 				75B1A70C2757B8EB00EB6F95 /* CLLocationManagerProtocol.swift in Sources */,
+				755BC1F22760E9E1006D2B4C /* ScheduleView.swift in Sources */,
+				755BC1F42760EAB8006D2B4C /* SholatSchedule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,7 +507,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				75B1A7182757BC8200EB6F95 /* MockSholatAPIService.swift in Sources */,
+				755BC1F92760EE6C006D2B4C /* ApplicationUtilTests.swift in Sources */,
 				75A415112757AF0400AD2291 /* SholatWidgetTests.swift in Sources */,
+				755BC1FE276102B5006D2B4C /* SholatScheduleTests.swift in Sources */,
 				75B1A71C2757BCDB00EB6F95 /* MockLocationManager.swift in Sources */,
 				75B1A71A2757BCB700EB6F95 /* MockSholatViewDelegate.swift in Sources */,
 				75B1A7102757BBC800EB6F95 /* SholatAPIServiceTests.swift in Sources */,
