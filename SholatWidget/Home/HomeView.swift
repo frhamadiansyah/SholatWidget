@@ -10,36 +10,49 @@ import SwiftUI
 struct HomeView: View {
 
     @StateObject var viewModel: SholatViewModel = SholatViewModel(delegate: nil)
+    
+    let dateFor = DateFormatter()
+    let dateForMasehi = DateFormatter()
 
-    @State var executeFetch: Bool = false
+    let hijriCalendar = Calendar.init(identifier: Calendar.Identifier.islamicCivil)
 
+    init() {
+        dateFor.locale = Locale.init(identifier: "en") // or "en" as you want to show numbers
+        dateFor.calendar = hijriCalendar
+
+        dateForMasehi.calendar = Calendar.current
+        dateForMasehi.dateStyle = .full
+//        dateFor.dateFormat = "dd/MM/yyyy"
+        dateFor.dateStyle = .full
+        print(dateFor.string(from: Date()))
+
+    }
 
     var body: some View {
         VStack {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-            Text(viewModel.sholatToday?.asr ?? "")
-            Button {
-                let model = SholatTimingsRequestModel(latitude: 51.5, longitude: 0.13, date: Stub.dummyDate)
-                viewModel.fetchTodaysTiming(withModel: model, todaysDate: Stub.dummyDate)
-            } label: {
-                Text("Fetch Sholat Time")
-                    .padding()
-            }
+            Text(viewModel.locationName ?? "")
+                .font(.title)
+                .padding()
+            Text(dateForMasehi.string(from: Date()))
+            Text(dateFor.string(from: Date()))
+            Text(viewModel.sholatSchedule?.getCurrentSholat().rawValue ?? "")
+                .font(.title2)
+                .padding()
+//            Text(viewModel.sholatSchedule.g)
+//            Text(viewModel.sholatToday?.asr ?? "")
+//            Button {
+//                let model = SholatTimingsRequestModel(latitude: 51.5, longitude: 0.13, date: Stub.dummyDate)
+//                viewModel.mapTodaysTiming(withModel: model, todaysDate: Stub.dummyDate)
+//            } label: {
+//                Text("Fetch Sholat Time")
+//                    .padding()
+//            }
 
             if let schedule = viewModel.sholatSchedule {
-                ScheduleView(schedule: schedule, executeFetch: $executeFetch)
-            }
-            
-            if executeFetch {
-                Text("NEXTTTT")
-                    .onAppear {
-                        print("EXECUTEEEE")
-//                        executeFetch = false
-                    }
+                ScheduleView(schedule: schedule)
             }
 
-        }
-        
+        }.padding(.vertical)
 
     }
 

@@ -8,22 +8,61 @@
 import Foundation
 import CoreLocation
 
-class SholatLocationManager: NSObject, CLLocationManagerDelegate {
+class SholatLocationManager: NSObject, CLLocationManagerDelegate, ObservableObject {
 
-    var locationManager: CLLocationManagerProtocol = CLLocationManager()
-    var location: CLLocationCoordinate2D?
+//    var locationManager: CLLocationManagerProtocol = CLLocationManager()
+    var locationManager = CLLocationManager()
+    @Published var location: CLLocationCoordinate2D?
+    @Published var placemark: CLPlacemark?
 
-    func getLocation() {
+    override init() {
+        super.init()
         locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization()
-        locationManager.startUpdatingLocation()
+        self.getLocation()
+    }
+    func getLocation() {
+
+        locationManager.requestAlwaysAuthorization()
+        locationManager.startMonitoringSignificantLocationChanges()
+
     }
 
-    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        location = (manager.location?.coordinate)!
-        if let unwrapLocation = location {
-            print(unwrapLocation.latitude)
-            print(unwrapLocation.longitude)
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let loc = locations.first
+        if let unwrapLoc = loc {
+            location = unwrapLoc.coordinate
+            print("Update Location")
+            print(unwrapLoc.coordinate.latitude)
+            print(unwrapLoc.coordinate.longitude)
+
+            //getCLPlacemark
+            getPlace(for: unwrapLoc) { [weak self] locationName in
+                if let place = locationName {
+                    self?.placemark = place
+                }
+
+            }
+        }
+
+    }
+
+    func getPlace(for location: CLLocation,
+                  completion: @escaping (CLPlacemark?) -> Void) {
+
+        let geocoder = CLGeocoder()
+        geocoder.reverseGeocodeLocation(location) { placemarks, error in
+
+            guard error == nil else {
+                completion(nil)
+                return
+            }
+
+            guard let placemark = placemarks?[0] else {
+                completion(nil)
+                return
+            }
+            
+            completion(placemark)
         }
     }
 }

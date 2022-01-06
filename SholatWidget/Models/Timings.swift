@@ -23,7 +23,7 @@ struct Timings: Decodable {
         case maghrib = "Maghrib"
         case isha = "Isha"
     }
-    
+
 //    init(from decoder: Decoder) throws {
 //        let container = try decoder.container(keyedBy: CodingKeys.self)
 //        fajr = try container.decode(String.self, forKey: .fajr)
@@ -35,6 +35,4 @@ struct Timings: Decodable {
 //
 //        add = nil
 //    }
-    
-    
 }

@@ -10,6 +10,8 @@ import CoreLocation
 @testable import SholatWidget
 
 class MockLocationManager: CLLocationManagerProtocol {
+    func requestAlwaysAuthorization() { }
+    func startMonitoringSignificantLocationChanges() { }
 
     func getAuthorizationStatus() -> CLAuthorizationStatus {
         return .authorizedWhenInUse

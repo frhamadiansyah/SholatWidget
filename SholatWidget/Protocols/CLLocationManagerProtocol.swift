@@ -20,6 +20,8 @@ protocol CLLocationManagerProtocol {
     func requestWhenInUseAuthorization()
     func startUpdatingLocation()
     func stopUpdatingLocation()
+    func requestAlwaysAuthorization()
+    func startMonitoringSignificantLocationChanges()
 
     // Wrappers for CLLocationManager class functions.
     func getAuthorizationStatus() -> CLAuthorizationStatus
