@@ -52,6 +52,7 @@
 		75DF26C327887494001F234D /* SelectLocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF26C227887493001F234D /* SelectLocationsView.swift */; };
 		75E44C84275910CE006FF3A6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E44C83275910CE006FF3A6 /* HomeView.swift */; };
 		75F524C02790642600114B6A /* LocationSuggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F524BF2790642600114B6A /* LocationSuggestion.swift */; };
+		75F524C22791AC1A00114B6A /* SholatScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F524C12791AC1A00114B6A /* SholatScheduleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +121,7 @@
 		75DF26C227887493001F234D /* SelectLocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLocationsView.swift; sourceTree = "<group>"; };
 		75E44C83275910CE006FF3A6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		75F524BF2790642600114B6A /* LocationSuggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSuggestion.swift; sourceTree = "<group>"; };
+		75F524C12791AC1A00114B6A /* SholatScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholatScheduleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 				75DF26BC2787B09D001F234D /* MainView.swift */,
 				75DF26BE2787B126001F234D /* SettingView.swift */,
 				75DF26C227887493001F234D /* SelectLocationsView.swift */,
+				75F524C12791AC1A00114B6A /* SholatScheduleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 				75A415042757AF0400AD2291 /* Persistence.swift in Sources */,
 				75B1A6FD2757B6EC00EB6F95 /* Extension+CoreLocationManager.swift in Sources */,
 				75B1A6F62757B66300EB6F95 /* Timings.swift in Sources */,
+				75F524C22791AC1A00114B6A /* SholatScheduleView.swift in Sources */,
 				75B1A7082757B88B00EB6F95 /* SholatAPIServiceProtocol.swift in Sources */,
 				755BC20027614FF6006D2B4C /* Stub.swift in Sources */,
 				755BC202276150C0006D2B4C /* CountdownWheelView.swift in Sources */,

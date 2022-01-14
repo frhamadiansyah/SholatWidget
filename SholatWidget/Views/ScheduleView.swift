@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ScheduleView: View {
     @Environment(\.scenePhase) var scenePhase
-    let schedule: SholatSchedule
+    @Binding var schedule: SholatSchedule
 
     @State var sholatNows: SholatNow
 
@@ -19,14 +19,14 @@ struct ScheduleView: View {
 
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
-    init(schedule: SholatSchedule) {
+    init(schedule: Binding<SholatSchedule>) {
 //        let time = Stub.dummyDate
         let time = Date()
 
-        self.schedule = schedule
+        self._schedule = schedule
 
-        let currentSholatTemp = schedule.getCurrentSholat(currentTime: time)
-        let sholatNow = schedule.getDurationAndRemainingTime(currentSholat: currentSholatTemp, time: time)
+        let currentSholatTemp = schedule.wrappedValue.getCurrentSholat(currentTime: time)
+        let sholatNow = schedule.wrappedValue.getDurationAndRemainingTime(currentSholat: currentSholatTemp, time: time)
 
         self._remainingTime = State(initialValue: sholatNow.remainingTimeSecond)
         self._totalDurationTime = State(initialValue: sholatNow.durationSecond)
@@ -72,6 +72,7 @@ struct ScheduleView: View {
                 updateParam(date: Date())
             }
         }
+        
         .onChange(of: scenePhase) { newScenePhase in
             switch newScenePhase {
             case .active:
@@ -101,6 +102,6 @@ struct ScheduleView: View {
 
 struct ScheduleView_Previews: PreviewProvider {
     static var previews: some View {
-        ScheduleView(schedule: Stub.sholatScheduleStub)
+        ScheduleView(schedule: .constant(Stub.sholatScheduleStub))
     }
 }

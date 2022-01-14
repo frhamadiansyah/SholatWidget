@@ -22,7 +22,11 @@ class SholatViewModel: ObservableObject {
     @Published var locationName: String?
 
     @Published var sholatError: SholatError?
-    @Published var sholatSchedule: SholatSchedule?
+    @Published var sholatSchedule: SholatSchedule = Stub.sholatScheduleStub {
+        didSet {
+            print(sholatSchedule.schedule[.asr])
+        }
+    }
 
     var disposable = Set<AnyCancellable>()
 
@@ -34,25 +38,27 @@ class SholatViewModel: ObservableObject {
 
         // subscriber for significant location changes
         self.locationManager.$location.sink { [unowned self] loc in
-            
+            self.locationManager.locationManager.stopUpdatingLocation()
             if let locUnwrap = loc {
-                let lat = Double(locUnwrap.latitude)
-                let lon = Double(locUnwrap.longitude)
+                
+                let lat = Double(locUnwrap.coordinate.latitude)
+                let lon = Double(locUnwrap.coordinate.longitude)
                 let request = SholatTimingsRequestModel(latitude: lat, longitude: lon, date: Date())
                 self.mapTodaysTiming(withModel: request, todaysDate: Date())
+                
+                self.locationManager.getPlace(for: locUnwrap) { placemark in
+                    if let placemarkUnwrap = placemark {
+                        let name = placemarkUnwrap.locality ?? ""
+                        let country = placemarkUnwrap.administrativeArea ?? ""
+                        self.locationName = "\(name), \(country)"
+                        self.locationManager.placemarkString = "\(name), \(country)"
+                        
+                    }
+                }
             }
         }.store(in: &disposable)
 
-        //subscribe for location placemark
-        self.locationManager.$placemark.sink { [unowned self] place in
-            if let placeUnwrap = place {
-                let locality = placeUnwrap.country
-                let name = placeUnwrap.city
-                self.locationName = "\(name), \(locality)"
-            }
-        }.store(in: &disposable)
     }
-    
 
     func mapTodaysTiming(withModel model: SholatTimingsRequestModel, todaysDate date: Date) {
         let calendar = Calendar.current.dateComponents([.day, .year, .month], from: date)

@@ -24,8 +24,9 @@ class SholatLocationManager: NSObject, CLLocationManagerDelegate, ObservableObje
     let locationManager = CLLocationManager()
     let geocoder = CLGeocoder()
     
-    @Published var location: CLLocationCoordinate2D?
+    @Published var location: CLLocation?
     @Published var placemark: LocationSuggestion?
+    @Published var placemarkString: String?
 
     @Published var queryFragment: String = ""
     @Published private(set) var status: LocationStatus = .idle
@@ -48,9 +49,8 @@ class SholatLocationManager: NSObject, CLLocationManagerDelegate, ObservableObje
         } else {
             self.stopLocation()
         }
-       
 
-
+        // execute search after query inserted
         $queryFragment
             .receive(on: DispatchQueue.main)
             .debounce(for: .milliseconds(250), scheduler: RunLoop.main, options: nil)
@@ -77,20 +77,9 @@ class SholatLocationManager: NSObject, CLLocationManagerDelegate, ObservableObje
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let loc = locations.first
         if let unwrapLoc = loc {
-            location = unwrapLoc.coordinate
+            location = unwrapLoc
             print("Update Location")
-            print(unwrapLoc.coordinate.latitude)
-            print(unwrapLoc.coordinate.longitude)
 
-            //getCLPlacemark
-            getPlace(for: unwrapLoc) { [weak self] locationName in
-                if let place = locationName {
-                    guard let locality = place.locality else { return }
-                    guard let country = place.country else { return }
-                    self?.placemark = LocationSuggestion(city: locality, country: country)
-                }
-
-            }
         }
 
     }
@@ -109,12 +98,11 @@ class SholatLocationManager: NSObject, CLLocationManagerDelegate, ObservableObje
                 completion(nil)
                 return
             }
-            
             completion(placemark)
         }
     }
-    
-    func getCoordinate(for locationName: String, completion: @escaping (CLLocationCoordinate2D?) -> Void) {
+
+    func getCoordinate(for locationName: String, completion: @escaping (CLLocation?) -> Void) {
 
         geocoder.geocodeAddressString(locationName) { (placemark, error) in
             if let error = error {
@@ -122,7 +110,7 @@ class SholatLocationManager: NSObject, CLLocationManagerDelegate, ObservableObje
                 completion(nil)
             }
             if let places = placemark {
-                let result = places.first?.location!.coordinate
+                let result = places.first?.location!
                 completion(result)
             }
         }
@@ -152,15 +140,19 @@ extension SholatLocationManager: MKLocalSearchCompleterDelegate {
 
                 if place.city != "" && place.country != ""{
 
-                    searchResults.append(place)
+                    if place.country != "Search Nearby" {
+                        searchResults.append(place)
+                    }
                 }
             }
 
             buildCityTypeB(titleComponents, subtitleComponents) { place in
 
-                if place.city != "" && place.country != ""{
+                if place.city != "" && place.country != "" {
 
-                    searchResults.append(place)
+                    if place.country != "Search Nearby" {
+                        searchResults.append(place)
+                    }
                 }
             }
         }

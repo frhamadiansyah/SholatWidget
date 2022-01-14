@@ -35,13 +35,14 @@ struct HomeView: View {
                 .padding()
             Text(dateForMasehi.string(from: Date()))
             Text(dateFor.string(from: Date()))
-            Text(viewModel.sholatSchedule?.getCurrentSholat().rawValue ?? "")
+            Text(viewModel.sholatSchedule.getCurrentSholat().rawValue)
                 .font(.title2)
                 .padding()
 
-            if let schedule = viewModel.sholatSchedule {
-                ScheduleView(schedule: schedule)
-            }
+            ScheduleView(schedule: $viewModel.sholatSchedule)
+//            if let schedule = viewModel.sholatSchedule {
+//                ScheduleView(schedule: Binding(schedule))
+//            }
 
         }.padding(.vertical)
 

@@ -20,7 +20,7 @@ struct SettingView: View {
                 }
                 VStack(alignment: .leading) {
                     Text("Current Location")
-                    Text(viewModel.selectedLocation?.city ?? "")
+                    Text(viewModel.locationName ?? "")
                         .font(.caption2)
                 }
             }
