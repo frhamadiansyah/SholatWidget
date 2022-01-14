@@ -46,7 +46,12 @@
 		75B1A71C2757BCDB00EB6F95 /* MockLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1A71B2757BCDB00EB6F95 /* MockLocationManager.swift */; };
 		75B1A71E2757BD2500EB6F95 /* MockConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1A71D2757BD2500EB6F95 /* MockConstants.swift */; };
 		75B1A7202757BDB500EB6F95 /* MockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 75B1A71F2757BDB500EB6F95 /* MockResponse.json */; };
+		75DF26BD2787B09D001F234D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF26BC2787B09D001F234D /* MainView.swift */; };
+		75DF26BF2787B126001F234D /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF26BE2787B126001F234D /* SettingView.swift */; };
+		75DF26C127886952001F234D /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF26C027886951001F234D /* SettingViewModel.swift */; };
+		75DF26C327887494001F234D /* SelectLocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF26C227887493001F234D /* SelectLocationsView.swift */; };
 		75E44C84275910CE006FF3A6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E44C83275910CE006FF3A6 /* HomeView.swift */; };
+		75F524C02790642600114B6A /* LocationSuggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F524BF2790642600114B6A /* LocationSuggestion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,7 +114,12 @@
 		75B1A71B2757BCDB00EB6F95 /* MockLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocationManager.swift; sourceTree = "<group>"; };
 		75B1A71D2757BD2500EB6F95 /* MockConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockConstants.swift; sourceTree = "<group>"; };
 		75B1A71F2757BDB500EB6F95 /* MockResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockResponse.json; sourceTree = "<group>"; };
+		75DF26BC2787B09D001F234D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		75DF26BE2787B126001F234D /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		75DF26C027886951001F234D /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		75DF26C227887493001F234D /* SelectLocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLocationsView.swift; sourceTree = "<group>"; };
 		75E44C83275910CE006FF3A6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		75F524BF2790642600114B6A /* LocationSuggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSuggestion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +153,9 @@
 				755BC1EE2760C52E006D2B4C /* ProgressMeter.swift */,
 				755BC1F12760E9E1006D2B4C /* ScheduleView.swift */,
 				755BC201276150C0006D2B4C /* CountdownWheelView.swift */,
+				75DF26BC2787B09D001F234D /* MainView.swift */,
+				75DF26BE2787B126001F234D /* SettingView.swift */,
+				75DF26C227887493001F234D /* SelectLocationsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -246,6 +259,7 @@
 				755BC1FA2760FEEC006D2B4C /* SholatEnum.swift */,
 				755BC1FF27614FF6006D2B4C /* Stub.swift */,
 				75137A5D276246A100ABF7B3 /* SholatNow.swift */,
+				75F524BF2790642600114B6A /* LocationSuggestion.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -271,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				75B1A7042757B85300EB6F95 /* SholatViewModel.swift */,
+				75DF26C027886951001F234D /* SettingViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -475,12 +490,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				75B1A6F22757B63500EB6F95 /* SholatData.swift in Sources */,
+				75DF26BD2787B09D001F234D /* MainView.swift in Sources */,
 				75B1A6EE2757B5AE00EB6F95 /* SholatTimingsRequestModel.swift in Sources */,
 				75A415072757AF0400AD2291 /* SholatWidget.xcdatamodeld in Sources */,
 				75B1A7022757B81500EB6F95 /* SholatAPIService.swift in Sources */,
 				755BC1F62760ECEF006D2B4C /* ApplicationUtil.swift in Sources */,
 				75B1A70A2757B8C500EB6F95 /* SholatViewDelegateProtocol.swift in Sources */,
 				75E44C84275910CE006FF3A6 /* HomeView.swift in Sources */,
+				75F524C02790642600114B6A /* LocationSuggestion.swift in Sources */,
+				75DF26C327887494001F234D /* SelectLocationsView.swift in Sources */,
 				75137A5E276246A100ABF7B3 /* SholatNow.swift in Sources */,
 				75A415042757AF0400AD2291 /* Persistence.swift in Sources */,
 				75B1A6FD2757B6EC00EB6F95 /* Extension+CoreLocationManager.swift in Sources */,
@@ -488,12 +506,14 @@
 				75B1A7082757B88B00EB6F95 /* SholatAPIServiceProtocol.swift in Sources */,
 				755BC20027614FF6006D2B4C /* Stub.swift in Sources */,
 				755BC202276150C0006D2B4C /* CountdownWheelView.swift in Sources */,
+				75DF26C127886952001F234D /* SettingViewModel.swift in Sources */,
 				75B1A6FF2757B71600EB6F95 /* SholatLocationManager.swift in Sources */,
 				75B1A6EC2757B57700EB6F95 /* SholatError.swift in Sources */,
 				75A414FD2757AF0100AD2291 /* ContentView.swift in Sources */,
 				75B1A6F02757B5E700EB6F95 /* SholatAPIResponse.swift in Sources */,
 				755BC1FB2760FEEC006D2B4C /* SholatEnum.swift in Sources */,
 				75B1A7052757B85300EB6F95 /* SholatViewModel.swift in Sources */,
+				75DF26BF2787B126001F234D /* SettingView.swift in Sources */,
 				75A414FB2757AF0100AD2291 /* SholatWidgetApp.swift in Sources */,
 				755BC1EF2760C52E006D2B4C /* ProgressMeter.swift in Sources */,
 				75B1A70C2757B8EB00EB6F95 /* CLLocationManagerProtocol.swift in Sources */,

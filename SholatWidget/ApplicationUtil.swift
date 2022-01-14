@@ -22,4 +22,11 @@ struct ApplicationUtil {
         let result = Calendar.current.date(bySettingHour: hour!, minute: minute!, second: 0, of: Date())!
         return result
     }
+    
+    //MARK: - user defaults key
+    
+    static let useLocationServices: String = "useLocationServices"
+    
+    static let lastLocation: String = "lastLocationName"
 }
+

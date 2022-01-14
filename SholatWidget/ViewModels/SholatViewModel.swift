@@ -10,11 +10,15 @@ import CoreLocation
 import Combine
 
 class SholatViewModel: ObservableObject {
-
-    var service: SholatAPIServiceProtocol
+    
+    //API Service
+    let service: SholatAPIServiceProtocol
     private weak var delegate: SholatViewDelegateProtocol?
+
+    //Location Service
 //    var locationManager: CLLocationManagerProtocol
-    var locationManager: SholatLocationManager = SholatLocationManager()
+    var locationManager: SholatLocationManager = SholatLocationManager.shared
+
     @Published var locationName: String?
 
     @Published var sholatError: SholatError?
@@ -30,6 +34,7 @@ class SholatViewModel: ObservableObject {
 
         // subscriber for significant location changes
         self.locationManager.$location.sink { [unowned self] loc in
+            
             if let locUnwrap = loc {
                 let lat = Double(locUnwrap.latitude)
                 let lon = Double(locUnwrap.longitude)
@@ -41,8 +46,8 @@ class SholatViewModel: ObservableObject {
         //subscribe for location placemark
         self.locationManager.$placemark.sink { [unowned self] place in
             if let placeUnwrap = place {
-                guard let locality = placeUnwrap.locality else { return }
-                guard let name = placeUnwrap.name else { return }
+                let locality = placeUnwrap.country
+                let name = placeUnwrap.city
                 self.locationName = "\(name), \(locality)"
             }
         }.store(in: &disposable)
@@ -62,6 +67,7 @@ class SholatViewModel: ObservableObject {
                 if (model.getMonth(date: model.date) == calendar.month) && (model.getYear(date: model.date) == calendar.year) {
                     if let day = calendar.day {
                         DispatchQueue.main.async {
+                            print("GET NEW LOC")
                             self.delegate?.successfulFetch()
                             self.sholatSchedule = SholatSchedule(timings: response.data[day - 1].timings)
                             // TODO: save timings to persistance

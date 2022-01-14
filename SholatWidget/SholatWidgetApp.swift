@@ -15,7 +15,7 @@ struct SholatWidgetApp: App {
         WindowGroup {
 //            ContentView()
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
-            HomeView()
+            MainView()
         }
     }
 }

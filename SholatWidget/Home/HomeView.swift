@@ -38,15 +38,6 @@ struct HomeView: View {
             Text(viewModel.sholatSchedule?.getCurrentSholat().rawValue ?? "")
                 .font(.title2)
                 .padding()
-//            Text(viewModel.sholatSchedule.g)
-//            Text(viewModel.sholatToday?.asr ?? "")
-//            Button {
-//                let model = SholatTimingsRequestModel(latitude: 51.5, longitude: 0.13, date: Stub.dummyDate)
-//                viewModel.mapTodaysTiming(withModel: model, todaysDate: Stub.dummyDate)
-//            } label: {
-//                Text("Fetch Sholat Time")
-//                    .padding()
-//            }
 
             if let schedule = viewModel.sholatSchedule {
                 ScheduleView(schedule: schedule)
