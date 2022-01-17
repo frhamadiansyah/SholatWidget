@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7501BC0427958E0300C616F9 /* ScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7501BC0327958E0300C616F9 /* ScheduleViewModel.swift */; };
 		75137A5E276246A100ABF7B3 /* SholatNow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75137A5D276246A100ABF7B3 /* SholatNow.swift */; };
 		755BC1EF2760C52E006D2B4C /* ProgressMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755BC1EE2760C52E006D2B4C /* ProgressMeter.swift */; };
 		755BC1F22760E9E1006D2B4C /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755BC1F12760E9E1006D2B4C /* ScheduleView.swift */; };
@@ -73,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7501BC0327958E0300C616F9 /* ScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewModel.swift; sourceTree = "<group>"; };
 		75137A5D276246A100ABF7B3 /* SholatNow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholatNow.swift; sourceTree = "<group>"; };
 		755BC1EE2760C52E006D2B4C /* ProgressMeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressMeter.swift; sourceTree = "<group>"; };
 		755BC1F12760E9E1006D2B4C /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 			children = (
 				75B1A7042757B85300EB6F95 /* SholatViewModel.swift */,
 				75DF26C027886951001F234D /* SettingViewModel.swift */,
+				7501BC0327958E0300C616F9 /* ScheduleViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 				75F524C02790642600114B6A /* LocationSuggestion.swift in Sources */,
 				75DF26C327887494001F234D /* SelectLocationsView.swift in Sources */,
 				75137A5E276246A100ABF7B3 /* SholatNow.swift in Sources */,
+				7501BC0427958E0300C616F9 /* ScheduleViewModel.swift in Sources */,
 				75A415042757AF0400AD2291 /* Persistence.swift in Sources */,
 				75B1A6FD2757B6EC00EB6F95 /* Extension+CoreLocationManager.swift in Sources */,
 				75B1A6F62757B66300EB6F95 /* Timings.swift in Sources */,

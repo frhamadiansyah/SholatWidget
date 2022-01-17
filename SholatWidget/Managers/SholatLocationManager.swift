@@ -78,7 +78,6 @@ class SholatLocationManager: NSObject, CLLocationManagerDelegate, ObservableObje
         let loc = locations.first
         if let unwrapLoc = loc {
             location = unwrapLoc
-            print("Update Location")
 
         }
 

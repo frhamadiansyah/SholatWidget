@@ -15,6 +15,6 @@ struct Stub {
     
     
     static let sholatScheduleStub = SholatSchedule(timings: Stub.timingsStub)
-    static let dhuhrTime = Calendar.current.date(bySettingHour: 14, minute: 0, second: 0, of: Date())!
+    static let dhuhrTime = Calendar.current.date(bySettingHour: 14, minute: 3, second: 50, of: Date())!
     static let sholatNowStub = Stub.sholatScheduleStub.getDurationAndRemainingTime(currentSholat: .dhuhr, time: Stub.dhuhrTime)
 }

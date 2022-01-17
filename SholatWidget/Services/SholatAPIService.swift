@@ -12,6 +12,7 @@ class SholatAPIService: SholatAPIServiceProtocol {
     private var urlSession: URLSession
 
     init(urlSession: URLSession = .shared) {
+        print("Sholat API Service is initiated ✅")
         self.urlSession = urlSession
     }
 
@@ -45,5 +46,8 @@ class SholatAPIService: SholatAPIServiceProtocol {
             }
         }
         dataTask.resume()
+    }
+    deinit {
+        print("Sholat API Service is destroyed ❌")
     }
 }

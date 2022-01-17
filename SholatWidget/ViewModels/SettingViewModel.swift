@@ -28,6 +28,7 @@ class SettingViewModel: ObservableObject {
 
 
     init() {
+        print("Setting View Model is initiated ✅")
         self.useLocationService = UserDefaults.standard.bool(forKey: ApplicationUtil.useLocationServices)
 
         //subscribe useLocationService
@@ -75,6 +76,9 @@ class SettingViewModel: ObservableObject {
             }
         }.store(in: &disposable)
 
+    }
+    deinit {
+        print("Setting View Model is Destroyed ❌")
     }
 
 }

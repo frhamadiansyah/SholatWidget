@@ -10,38 +10,31 @@ import SwiftUI
 struct HomeView: View {
 
     @StateObject var viewModel: SholatViewModel = SholatViewModel(delegate: nil)
-    
-    let dateFor = DateFormatter()
-    let dateForMasehi = DateFormatter()
 
-    let hijriCalendar = Calendar.init(identifier: Calendar.Identifier.islamicCivil)
-
-    init() {
-        dateFor.locale = Locale.init(identifier: "en") // or "en" as you want to show numbers
-        dateFor.calendar = hijriCalendar
-
-        dateForMasehi.calendar = Calendar.current
-        dateForMasehi.dateStyle = .full
-//        dateFor.dateFormat = "dd/MM/yyyy"
-        dateFor.dateStyle = .full
-        print(dateFor.string(from: Date()))
-
-    }
 
     var body: some View {
         VStack {
             Text(viewModel.locationName ?? "")
                 .font(.title)
                 .padding()
-            Text(dateForMasehi.string(from: Date()))
-            Text(dateFor.string(from: Date()))
-            Text(viewModel.sholatSchedule.getCurrentSholat().rawValue)
-                .font(.title2)
-                .padding()
+            Text(viewModel.getDateFormatter().string(from: Date()))
+            Text(viewModel.getDateFormatter(.islamicCivil).string(from: Date()))
+            
 
-            ScheduleView(schedule: $viewModel.sholatSchedule)
+            if let scheduleVM = viewModel.scheduleViewModel {
+                SholatScheduleView(viewModel: scheduleVM)
+                    .onReceive(viewModel.$scheduleViewModel) { _ in
+//                        print("Berubahhh")
+                        if viewModel.scheduleViewModel == nil {
+                            print("‼️ Prev Schedule View Model is destroyed")
+                        } else {
+                            print("❗️ send Schedule View Model \(viewModel.scheduleViewModel!.vmID) to SholatScheduleView")
+                        }
+                        
+                    }
+            }
 //            if let schedule = viewModel.sholatSchedule {
-//                ScheduleView(schedule: Binding(schedule))
+//                SholatScheduleView(schedule: viewModel.sholatSchedule)
 //            }
 
         }.padding(.vertical)

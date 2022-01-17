@@ -32,7 +32,7 @@ struct SelectLocationsView: View {
 
                             Button {
                                 self.viewModel.selectedLocation = completionResult
-                                print("send location \(completionResult.city)")
+
                                 self.presentationMode.wrappedValue.dismiss()
                             } label: {
                                 VStack(alignment: .leading) {
